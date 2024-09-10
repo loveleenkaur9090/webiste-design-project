@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"Poppins", sans-serif;
+   
 }
 /* <!-- HEADER --> */
 .header{
@@ -12,6 +13,7 @@
     height: 100px;
     display: flex;
     padding: 10px;
+    margin-top: 20px;
     position: sticky;
     background-color:white;
 }
@@ -154,11 +156,11 @@
     padding: 2px;
 }
 .grid-item img{
-    height: 500px;
-    width: 100%;
+    height: 10%;
+    width: 50%;
     overflow: hidden;
 }
-@keyframes slide {
+/* @keyframes slide {
     0% { transform: translateX(200%); }
     20% { transform: translateX(40%); }
     30% { transform: translateX(-90%); }
@@ -168,7 +170,7 @@
     70% { transform: translateX(40%); }
     80% { transform: translateX(90%); }
     100% { transform: translateX(200%); }
-} 
+}  */
 
 
 
@@ -176,20 +178,29 @@
 
 /* best-seller-section */
 
-
-.container{
-    height: 700px ;
-    width: auto;
-    display: inline-flex;
+.best-product h1{
+    position: relative;
+    top: 50px;
     text-align: center;
+    align-items: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.container{
+    height:100%;
+    width: 100%;
+    display:flex;
     padding: 10px;
     transition: transform 0.3s ease;
-    padding: 10px 50px 20px 50px ;
+    /* padding: 10px 50px 20px 50px ; */
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .box{
     margin: 80px 20px 20px 20px;
-    width: 30%;
+    width: 27%;
     text-align: center;
     border: 1px solid #ccc;
     padding: 10px;
@@ -197,16 +208,24 @@
     transition: transform 0.3s ease;
 
 }
-
 .box img {
-    width: 350px;
+    width: 300px;
     height: 400px;
 }
 
 .box:hover {
     transform: scale(1.04);
 }
-
+.box h2{
+    font-weight: 400;
+    color: #292929;
+}
+.box p{
+    text-align: center;
+    color: #696868;
+    font-weight: 340;
+    width: 290px;
+}
 .rent-now{
     height: 50px;
     width: auto;
@@ -232,38 +251,187 @@
 /* <!-- CYCLE FEATURE --> */
 .cycle-info-container{
     display: flex;
+    margin-top: 50px;
 }
 .cycle-feature-section{
-    width: 70%;
-    height: 500px;
-    margin: 30px;
-    margin-top: 20px;
+    width: 90%;
+    height: 220px;
+    margin-top: 90px;
     padding-top: 20px;
     padding-left: 30px;
-    background-color: rgb(255, 226, 8);
+    margin-left: 70px;
+    background-color: #d5d5d5bc;
     color: black;
 }
 .cycle-feature-section h1{
-    font-size: 80px;
+    font-size: 35px;
+    font-weight: 350;
 }
-.cycle-feature-section h2{
-    font-size: 30px;
+.cycle-feature-section h3{
+    font-weight: 300;
+    font-size: 20px;
 }
 .cycle-feature-section h4{
-    font-size: 25px;
-    font-weight: 500;
-}
+    font-size: 20px;
+    font-weight: 250;
+   }
 .cycle-feature-section p{
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(66, 66, 66);
 }
 .cycle-feature-section .extra-bettery{
-    font-size: 30px;
+    padding-top: 15px;
+    font-size: 19px;
+    font-weight: 400;
 }
 .cycle-image-section img{
     height: 360px;
     width: 390px;
     position: relative;
-    top: 35%;
-    left: -29%;
+    left: -30%;
     border: 2px solid black;
+    border-radius: 50%;
 }
+
+
+/* car-info-container */
+.car-info-container{
+    padding-top: 50px;
+    display: flex;
+}
+.car-info-section{
+    float: left;
+    width: 90%;
+    height: 200px;
+    margin-top: 90px;
+    padding-top: 20px;
+    padding-left: 190px;
+    margin-right: 70px;
+    background-color: #d5d5d5bc;
+    /* background-color: rgb(255, 226, 8); */
+    color: black;
+}
+.car-info-section h1{
+    font-size: 35px;
+    font-weight: 350;
+}
+.car-info-section h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+.car-info-section h4{
+    font-size: 20px;
+    font-weight: 250;
+}
+.car-info-section p{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(66, 66, 66);
+}
+.car-image-section img{
+    height: 360px;
+    width: 400px;
+    position: relative;
+    left: 30%;
+    border: 3px solid rgb(7, 7, 7);
+    border-radius: 50%;
+}
+
+/* text-container */
+
+.text-container{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    height: 443px;
+    width: 100%;
+    }
+.text{
+    background-color: #cccccc29;
+}
+.text-container .text h2{
+    text-align: left;
+    float: right;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform:capitalize;
+    padding: 50px 10px 10px 30px ;
+    margin-right: 30px;
+}
+.text-container video{
+    float: left;
+    margin-left: 30px;
+}
+/* <!-- SCOOTER FEATURE --> */
+.sectionsevencontainer h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 45px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.sectionsevencontainer .rider img{
+    height: 300px;
+    width: 200px;
+}
+.rider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.scroll-image{
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    transition: left 0.5s ease;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.sectionfifthcontainer{
+    background-color: black;
+    color: white;
+    font-weight: 250;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.seclogo img{
+    height: 50px;
+    width: 200px;
+}
+.footercolumtwo a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.footercolumthree a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.socialicon img{
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: 6px;
+}
+.autor{
+    text-align: center;
+}
+.autor img{
+    width: 7%;
+}
+
