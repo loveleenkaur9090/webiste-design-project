@@ -79,8 +79,24 @@
     color: black;
 }
 
-
+.service {
+    margin: 20px 20px 20px 20px ;
+}
+.service h2{
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .service img{
-    display: inline-block;
+    justify-content: space-around;
+    display: inline-flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
     /* grid-template-columns: repeat(3,1fr); */
+}
+.service img:hover{
+    transform: scale(1.04);
 }
