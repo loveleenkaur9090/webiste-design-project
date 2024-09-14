@@ -529,22 +529,22 @@
     padding-bottom: 0px ;
     font-size: 17px;
  }
- /* .menu-bar ul{
+ .menu-bar ul{
     display: inline;
- } */
- /* .menu-bar ul li{
+ } 
+ .menu-bar ul li{
     margin: 20px ;
     list-style: none;
     position: relative;
-} */
-/* .menu-bar ul li a{
+} 
+.menu-bar ul li a{
     align-items: center;
     text-align: center;
     text-decoration: none;
     color: black;
     font-weight: 410;
-} */
-/* .cart-icon i{
+} 
+.cart-icon i{
     margin-top:25px;
     text-align: center;
     align-items: center;
@@ -569,7 +569,7 @@
     display: block;
     margin: 10px 0 0 170px;
     font-size: 30px;
- } */
+ } 
 
  .best-product h1{
     position: relative;
@@ -580,28 +580,38 @@
     padding-left: 10px;
     padding-bottom: 40px;
 }
+
+
+
 .container{
-    height:50%;
+    /* height:50%;
+    width: 100%;
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    height:100%;
     width: 100%;
     display:inline-block;
     padding: 10px;
     transition: transform 0.3s ease;
+    /* padding: 10px 50px 20px 50px ; */
     text-align: center;
     align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
+    justify-content: space-evenly;
 }
 
 .box{
-    margin: 50px 20px 20px 20px;
-    width: 27%;
+    margin-top: 50px ;
+    margin-left: 150px ;
+    width: 30%;
     /* align-items: center;
     text-align: center; */
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     padding-right: 20px;
-
 }
 .box img {
     width: 200px;
@@ -641,14 +651,17 @@
     color: yellow;
     border-color: white;
 }
+
+
+
 /* <!-- CYCLE FEATURE --> */
 .cycle-info-container{
     display: flex;
     margin-top: 50px;
 }
 .cycle-feature-section{
-    width: 50%;
-    height: 150px;
+    width: 60%;
+    height: 160px;
     margin-top: 90px;
     padding-top: 20px;
     /* padding-left: 30px; */
@@ -659,7 +672,7 @@
     margin-left: 0px;
 }
 .cycle-feature-section h1{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 400;
 }
 /* .cycle-feature-section h3{
@@ -681,12 +694,12 @@
     font-weight: 450;
 }
 .cycle-image-section img{
-    height: 160px;
-    width: 150px;
-    /* position: absolute; */
-    margin-left: 250%;
+    height: 250px;
+    width: 250px;
+    margin-left:192%;
     border: 2px solid black;
     border-radius: 50%;
+    margin-top: 20px;
 }
 
 
@@ -697,40 +710,40 @@
     margin-right: 20px;
 }
 .car-info-section{
-    width: 50%;
+    width: 60%;
     height: 150px;
     margin-top: 90px;
-    /* margin-left: 20px; */
+    margin-left: 70px;
     margin-top: 150px;
     padding-top: 20px;
     background-color: #d5d5d5bc;
     color: black;
 }
 .car-info-section h1{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 450;
-    margin-left: -20px;
+    margin-left: 30px;
 }
 .car-info-section h3{
     font-size: 15px;
     font-weight: 350;
-    margin-left: -20px;
+    margin-left: 30px;
 }
 .car-info-section h4{
     font-size: 15px;
     font-weight: 300;
-    margin-left: -20px;
+    margin-left: 30px;
 }
 .car-info-section p{
     font-size: 15px;
     font-weight: 350;
     color: rgb(66, 66, 66);
     position: absolute;
-    left: 170px;
+    left: 290px;
 }
 .car-image-section img{
-    height: 160px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     position: absolute;
     margin-top: 70px;
     left: 1%;
@@ -748,6 +761,7 @@
     width: 100%;
     }
 .text{
+    padding-left: 50px;
     background-color: #cccccc29;
 }
 .text-container .text h2{
@@ -760,9 +774,8 @@
     margin-right: 55%;
 }
 .text-container video{
-    float: left;
-    margin-left: 50px;
-    height: 200px;
+    margin-left: 100px;
+    height:250px;
     margin-top: 120px;
 }
 /* <!-- sectionfifthcontainer FOOTER --> */
@@ -771,7 +784,7 @@
     color: white;
     font-weight: 250;
     height: 40%;
-    width: 50%;
+    width: 66%;
 }
 .footer{
     display:inline-flex;
@@ -806,6 +819,71 @@
     font-size: 20px;
     position: absolute;
 
+}
+/* <!-- SCOOTER FEATURE --> */
+.sectionsevencontainer h2 {
+    padding-top: 30px;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 300;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.sectionsevencontainer .rider img{
+    height: 300px;
+    width: 200px;
+}
+.rider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.scroll-image{
+    display:inline-flex;
+    animation: scroll 10s linear infinite;
+    transition: left 0.5s ease;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+/*  */
+.reviews{
+    /* height: 200px; */
+    width: 50%;
+}
+.review{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: #ccc; */
+    padding-bottom: 20px;
+
+}
+.reviews h2{
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin: 10px 30px 30px 20px ;
+}
+.review img{
+    height: 400px;
+    width: 220px;
+    /* padding-left: 20px; */
+}
+.review img:hover{
+    transform: scale(1.04);
 }
 
 
