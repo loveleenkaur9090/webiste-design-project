@@ -512,73 +512,504 @@
 
 
 
-/* RESPONSIVE WEBSITE */
+/* RESPONSIVE WEBSITE-1*/
 
 @media screen  and (max-width:991px){
 
     body{
         overflow: hidden;
     }
- .header{
-    height: 300px;
-    width: 67%;
-    background-color: rgb(230, 14, 14);
-    position: relative;
-    /* display: none; */
+    .header{
+        display: flex;
+        padding: 10px;
+        margin-top: 0px;
+        position: sticky;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        background-color: rgb(251, 248, 248);
+    }
+    
+.logo img{
+    height: 50px;
+    width: 150px;
+    display: none;
+    left: 0;
  }
 .menu-bar{
-    padding-top: 0px ;
+    padding-top: 20px ;
     padding-left: 0px ;
     padding-right: 0px ;
     padding-bottom: 0px ;
-    font-size: 17px;
-    overflow: hidden;
+    font-size: 10px;
+    /* overflow: hidden; */
  }
  .menu-bar ul{
-    display: inline;
+    display:inline-flex;
 } 
 .menu-bar ul li{
-    margin: 20px ;
+    margin: 10px ;
     list-style: none;
     position: relative;
 } 
 .menu-bar ul li a{
-    align-items: center;
-    text-align: center;
+    /* align-items: center;
+    text-align: center; */
     text-decoration: none;
     color: black;
-    font-weight: 410;
-    margin-left: 20px;
+    font-weight: 500;
+    margin-left: 8px;
 } 
+.cart-icon{
+    top: auto;
+}
 .cart-icon i{
     text-align: center;
     align-items: center;
     cursor: pointer;
-    font-size: 28px;
-    display: none;
+    font-size: 18px;
+    /* display: none; */
 }
 .menubutton{
-    margin:70px 3px 0px 0px;
+    margin:20px 0px 5px 5px;
     align-items: center;
     text-align: center;
-    display: none;
+    /* display: none; */
+    position: relative;
 }
 .menubutton button{
-    font-size: 15px;
+    font-size: 10px;
     cursor: pointer;
-    position: absolute;
     border:2px solid black;
     background-color:rgb(255, 221, 0);
-    padding:10px 30px 10px 30px;
-    margin-top: 20px;
+    padding:5px 10px 10px 10px;
+    display: none;
+
 }
-.menu-icon{
+/* .menu-icon{
     display: block;
     margin-left: 100px;
     margin-top: 25px;
-    /* margin: 20px 0px 0px 170px; */
+    margin: 20px 0px 0px 170px;
     font-size: 35px;
- } 
+ }  */
+/*  */
+
+
+
+
+ /*  */
+ .best-product h1{
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+    font-weight: 300;
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+.container{
+    height:100%;
+    width: 100%;
+    display:inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    /* padding: 10px 50px 20px 50px ; */
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box{
+    margin-top: 50px ;
+    margin-left: 150px ;
+    width: 30%;
+    /* align-items: center;
+    text-align: center; */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding-right: 20px;
+}
+.box img {
+    width: 200px;
+    height: 300px;
+}
+
+.box:hover {
+    transform: scale(1.01);
+}
+.box h2{
+    font-weight: 300;
+    color: #292929;
+    font-size: 20px;
+}
+.box p{
+    text-align: center;
+    color: #696868;
+    font-weight: 300;
+    /* width: 290px;  */
+    font-size: 12px;
+    padding-right: 50px;
+}
+.rent-now{
+    height: 40px;
+    width: auto;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border:2px solid black;
+    background-color:rgb(255, 221, 0);
+    padding:0px 25px 0px 25px;
+}
+.rent-now:hover{
+    background-color: black;
+    color: yellow;
+    border-color: white;
+}
+
+
+
+/* <!-- CYCLE FEATURE --> */
+.cycle-info-container{
+    display: flex;
+    margin-top: 50px;
+}
+.cycle-feature-section{
+    width: 60%;
+    height: 160px;
+    margin-top: 90px;
+    padding-top: 20px;
+    /* padding-left: 30px; */
+    /* margin-left: 70px; */
+    background-color: #d5d5d5bc;
+    color: black;
+    position: absolute;
+    margin-left: 0px;
+}
+.cycle-feature-section h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+/* .cycle-feature-section h3{
+    font-weight: 200;
+    font-size: 10px;
+} */
+.cycle-feature-section h4{
+    font-size: 15px;
+    font-weight: 300;
+   }
+.cycle-feature-section p{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(66, 66, 66);
+}
+.cycle-feature-section .extra-bettery{
+    padding-top:2px;
+    font-size: 12px;
+    font-weight: 450;
+}
+.cycle-image-section img{
+    height: 250px;
+    width: 250px;
+    margin-left:192%;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+/* car-info-container */
+.car-info-container{
+    padding-top: 50px;
+    display: flex;
+    margin-right: 20px;
+}
+.car-info-section{
+    width: 60%;
+    height: 150px;
+    margin-top: 90px;
+    margin-left: 70px;
+    margin-top: 150px;
+    padding-top: 20px;
+    background-color: #d5d5d5bc;
+    color: black;
+}
+.car-info-section h1{
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 30px;
+}
+.car-info-section h3{
+    font-size: 15px;
+    font-weight: 350;
+    margin-left: 30px;
+}
+.car-info-section h4{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.car-info-section p{
+    font-size: 15px;
+    font-weight: 350;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    left: 290px;
+}
+.car-image-section img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-top: 70px;
+    left: 1%;
+    border: 3px solid rgb(7, 7, 7);
+    border-radius: 50%;
+}
+
+/* text-container */
+
+.text-container{
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    height: 443px;
+    width: 100%;
+    }
+.text{
+    padding-left: 50px;
+    background-color: #cccccc29;
+}
+.text-container .text h2{
+    text-align: left;
+    /* float: right; */
+    font-weight: 400;
+    font-size: 20px;
+    text-transform:capitalize;
+    margin: 0px 0px 0px 20px ;
+    margin-right: 55%;
+}
+.text-container video{
+    margin-left: 100px;
+    height:250px;
+    margin-top: 120px;
+}
+/* <!-- sectionfifthcontainer FOOTER --> */
+.sectionfifthcontainer{
+    background-color: black;
+    color: white;
+    font-weight: 250;
+    height: 40%;
+    width: 66%;
+}
+.footer{
+    display:inline-flex;
+    justify-content: space-between;
+    padding: 30px 40px ;
+}
+.seclogo img{
+    height: 50px;
+    width: 200px;
+}
+.footercolumtwo a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+.footercolumthree a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.socialicon img{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    margin: 6px;
+    margin-left: 20px;
+}
+.autor p{
+    font-weight: 150;
+    font-size: 20px;
+    position: absolute;
+
+}
+/* <!-- SCOOTER FEATURE --> */
+.sectionsevencontainer h2 {
+    padding-top: 30px;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 300;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.sectionsevencontainer .rider img{
+    height: 300px;
+    width: 200px;
+}
+.rider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.scroll-image{
+    display:inline-flex;
+    animation: scroll 10s linear infinite;
+    transition: left 0.5s ease;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+
+/*  */
+.reviews{
+    /* height: 200px; */
+    width: 50%;
+}
+.review{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: #ccc; */
+    padding-bottom: 20px;
+
+}
+.reviews h2{
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin: 10px 30px 30px 20px ;
+}
+.review img{
+    height: 400px;
+    width: 220px;
+    /* padding-left: 20px; */
+}
+.review img:hover{
+    transform: scale(1.04);
+}
+
+
+
+.slider {
+    width: 100%;
+    height: 370px;
+    /* max-width: 1000px; */
+    background-image: url(img/cta/scooter-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.slides{
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    animation: slide 20s infinite;
+}
+.grid-item {
+    padding: 2px;
+}
+.grid-item img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 90%;
+    overflow: hidden;
+}
+
+}
+
+
+@media screen  and (max-width:320px){
+
+
+    .header{
+        display: inline-flex;
+        padding: 10px;
+        margin-top: 0px;
+        position: sticky;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        background-color: rgb(251, 248, 248);
+    }
+    
+.logo img{
+    height: 50px;
+    width: 150px;
+    display: none;
+    left: 0;
+ }
+.menu-bar{
+    padding-top: 20px ;
+    padding-left: 0px ;
+    padding-right: 0px ;
+    padding-bottom: 0px ;
+    font-size: 10px;
+    /* overflow: hidden; */
+ }
+ .menu-bar ul{
+    display:inline-flex;
+} 
+.menu-bar ul li{
+    margin: 10px ;
+    list-style: none;
+    position: relative;
+} 
+.menu-bar ul li a{
+    /* align-items: center;
+    text-align: center; */
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-left: 8px;
+} 
+.cart-icon{
+    top: auto;
+}
+.cart-icon i{
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    /* display: none; */
+}
+.menubutton{
+    margin:20px 0px 5px 5px;
+    align-items: center;
+    text-align: center;
+    /* display: none; */
+    position: relative;
+}
+.menubutton button{
+    font-size: 10px;
+    cursor: pointer;
+    border:2px solid black;
+    background-color:rgb(255, 221, 0);
+    padding:5px 10px 10px 10px;
+    display: none;
+
+}
+/* .menu-icon{
+    display: block;
+    margin-left: 100px;
+    margin-top: 25px;
+    margin: 20px 0px 0px 170px;
+    font-size: 35px;
+ }  */
 /*  */
 
 
