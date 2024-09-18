@@ -56,10 +56,20 @@
     text-align: center;
     align-items: center;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 25px;
 }
-.cart-icon i:hover{
+/* .cart-icon i:hover{
     color:rgb(255, 221, 0);
+} */
+
+.quantity{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding:1px 8px;
+    position: absolute;
+    top: 33%;
+    left: 78%;
 }
 /* <!-- Menu-Button --> */
 .menubutton{
@@ -74,9 +84,174 @@
     background-color:rgb(255, 221, 0);
     padding:10px 30px 10px 30px;
 }
+
 .menubutton button:hover{
     background-color: white;
     color: black;
 }
 
 
+
+/*///////////////////////////////*/
+.e-cycle{
+    margin: 20px;
+    height: 100%;
+    width:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 51px;
+    /* background-color: red; */
+}
+#ecycle{
+    height: 420px;
+    width: 22vw;
+    /* border: 2px solid rgb(6, 0, 0); */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+#ecycle img{
+    height: 250px;
+    width: 200px;
+    margin-left: 15%;
+}
+#ecycle h2{
+    text-align: center;
+}
+#ecycle p{
+   text-align: center;
+}
+#ecycle button{
+    align-items: center;
+}
+#ecycle button a{
+    text-decoration: none;
+    background-color: rgb(255, 221, 0);
+    color: black;
+}
+.rent-now{
+    height: 50px;
+    width: auto;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border:2px solid black;
+    background-color:rgb(255, 221, 0);
+    padding:0px 30px 0px 30px;
+    margin-top: 8px;
+    margin-left: 25%;
+}
+
+/* reviews */
+.reviews{
+    /* height: 200px; */
+    width: 100%;
+}
+.review{
+    display: inline-flex;
+    /* background-color: #ccc; */
+    padding-bottom: 20px;
+}
+.reviews h2{
+    font-size: 60px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin: 10px 30px 30px 20px ;
+}
+.review img{
+    height: 400px;
+    width: 220px;
+    padding-left: 20px;
+}
+.review img:hover{
+    transform: scale(1.04);
+}
+
+
+
+/* <!-- sectionfifthcontainer FOOTER --> */
+.sectionfifthcontainer{
+    background-color: black;
+    color: white;
+    font-weight: 250;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    /* background-color: black; */
+}
+.seclogo img{
+    height: 50px;
+    width: 200px;
+}
+.footercolumtwo a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.footercolumthree a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.socialicon img{
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: 6px;
+}
+.autor{
+    text-align: center;
+}
+.autor p{
+    font-weight: 150;
+    font-size: 20px;
+}
+
+
+
+
+.cart{
+    position: fixed;
+    top: 0;
+    left: 72%;
+    width: 400px;
+    height: 100vh;
+    background-color: black;
+    transition: 0,3s;
+    display: none;
+  }
+  .cart h3{
+      font-weight:400;
+      text-align: center;
+      color: white;
+      margin-top:10px;
+  }
+  .cart .checkout {
+      position: absolute;
+      color: rgb(0, 0, 0);
+      bottom: 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      background-color: rgb(130, 123, 117);
+     /* padding: 10px 10px 10px ;
+     text-align: center; */
+  }
+  .cart .checkout div{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+  
+  }
+  .cart .checkout div:nth-child(2){
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
+  }
