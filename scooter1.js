@@ -2,9 +2,9 @@
 let cartItems = [];
 
 function addToCart() {
-    const cycleImage = document.getElementById('cycle-img').src;
-    const cycleName = document.getElementById('cycle-name').textContent;
-    const cycleDescription = document.getElementById('cycle-description').textContent;
+    const cycleImage = document.getElementById('scooter-img').src;
+    const cycleName = document.getElementById('scooter-name').textContent;
+    const cycleDescription = document.getElementById('scooter-description').textContent;
 
     const newItem = {
         image: cycleImage,
@@ -30,6 +30,7 @@ function updateCartDisplay() {
             <div>
                 <h3>${item.name}</h3>
                 <p>${item.description}</p>
+                 
             </div>
         `;
         cartContainer.appendChild(cartItem);

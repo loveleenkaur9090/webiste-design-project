@@ -2,9 +2,9 @@
 let cartItems = [];
 
 function addToCart() {
-    const cycleImage = document.getElementById('cycle-img').src;
-    const cycleName = document.getElementById('cycle-name').textContent;
-    const cycleDescription = document.getElementById('cycle-description').textContent;
+    const cycleImage = document.getElementById('car-img').src;
+    const cycleName = document.getElementById('car-name').textContent;
+    const cycleDescription = document.getElementById('car-description').textContent;
 
     const newItem = {
         image: cycleImage,
