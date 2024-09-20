@@ -149,7 +149,8 @@
     border:2px solid black;
     background-color:rgb(255, 221, 0);
     padding:0px 30px 0px 30px;
-    margin-top: 8px;
+    margin-top: 28px;
+    margin-left: 20px;
 }
 .video{
     margin: 90px;
@@ -291,9 +292,13 @@
     background-color: rgb(0, 225, 255);
 
 }
+
+
+
+
 .form ul{
     width: 100%;
-    height:200px;
+    height:100px;
     /* background-color: rgb(145, 255, 0); */
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -302,53 +307,65 @@
 .form ul li{
     list-style: none;
 }
+form label{
+    font-weight: 500;
+    font-size: 25px;
+}
 #form-box-1{
     padding: 20px;
     text-align: center;
     margin: 10px 10px 10px 0px;   
-    border-radius: 15%;
-    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5%;
+    border: 2px solid #00000000;
     background-color: rgb(244, 244, 244);
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.plan-name{
+    color: red;
 }
 #form-box-2{
     padding: 20px;
     text-align: center;
     margin: 10px;   
-    border-radius: 15%;  
-    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5%;  
+    border: 2px solid rgba(95, 95, 95, 0);
     background-color: rgb(244, 244, 244);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 #form-box-3{
     padding: 20px;
     text-align: center;
     margin: 10px;   
-    border-radius: 15%;
-    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5%;
+    border: 2px solid rgba(95, 95, 95, 0);
     background-color: rgb(244, 244, 244);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 #form-box-4{
     padding: 20px;
     text-align: center;
     margin: 10px;   
-    border-radius: 15%;
-    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5%;
+    border: 2px solid rgba(95, 95, 95, 0);
     background-color: rgb(244, 244, 244);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 #form-box-1:hover{
-    background-color: rgb(255, 242, 1);
+    background-color: rgb(255, 221, 0);
 }
 #form-box-2:hover{
-    background-color: rgb(255, 242, 1);
+    background-color: rgb(255, 221, 0);
 }
 #form-box-3:hover{
-    background-color: rgb(255, 242, 1);
+    background-color: rgb(255, 221, 0);
 }
 #form-box-4:hover{
-    background-color: rgb(255, 242, 1);
+    background-color: rgb(255, 221, 0);
 }
 
 
