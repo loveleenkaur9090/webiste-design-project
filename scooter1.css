@@ -265,7 +265,7 @@
     font-size: 20px;
 }
 
-.Productplans{
+/* .Productplans{
     width: 60%;
     height:200px;
     background-color: red;
@@ -273,7 +273,7 @@
     grid-template-columns: repeat(3,1fr);
     margin: 15px;
     text-align: center;
-}
+} */
 .plan1{
     /* height: 100%; */
     /* width: 200px; */
