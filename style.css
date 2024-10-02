@@ -73,6 +73,10 @@ html,body{
     align-items: center;
     text-align: center;
 }
+.menubutton a{
+    text-decoration: none;
+    color: black;
+}
 .menubutton button{
     font-size: 15px;
     cursor: pointer;
@@ -557,7 +561,7 @@ html,body{
 /* RESPONSIVE WEBSITE */
 @media (max-width:320px) {
     .header{
-        width: 100vw;
+        width: 100%;
         height: 70px;
         display: inline-flex;
         padding: 10px;
@@ -577,7 +581,7 @@ html,body{
         display: none;
     }
      .menu-bar ul{
-         display: inline-block;
+         display: inline-flex;
      }
      .menu-bar ul li{
          margin: 2px ;
@@ -589,6 +593,7 @@ html,body{
          text-decoration: none;
          color: black;
          font-weight: 310;
+         font-size: 10px;
      }
      .menu-bar a:hover{
          color: rgb(255, 221, 0);
@@ -885,6 +890,146 @@ html,body{
     height: 250px;
     width: 250px;
 }
+.sectionsevencontainer h2 {
+    padding-top: 30px;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 450;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.sectionsevencontainer .rider img{
+    height: 300px;
+    width: 200px;
+}
+.rider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.scroll-image{
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    transition: left 0.5s ease;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+.reviews{
+    /* height: 200px; */
+    width: 100%;
+}
+.review{
+    /* display: flex; */
+    /* background-color: #ccc; */
+    padding-bottom: 20px;
+}
+.reviews h2{
+    font-size: 30px;
+    font-weight: 450;
+    padding-left: 20px;
+    margin: 10px 30px 30px 20px ;
+}
+.review img{
+    /* height: 10%;
+    width: 50%;
+    padding-left: 20px; */
+    height: 300px;
+    width: 200px;
+}
+.review{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.review-iamge{
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    transition: left 0.5s ease;
+}
+.review img:hover{
+    transform: scale(1.04);
+}
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+/* <!-- sectionfifthcontainer FOOTER --> */
+.sectionfifthcontainer{
+    background-color: black;
+    color: white;
+    font-weight: 250;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 14px;
+}
+.seclogo img{
+    height: 30px;
+    width: 100px;
+}
+.footercolumone p{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: 200;
+}
+.footercolumtwo a{
+    padding-bottom: 3px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: 200;
+    padding-left: 10px;
+}
+.footercolumthree a{
+    padding-bottom: 3px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: 200;
+    padding-left: 10px;
+}
+.socialicon{
+    padding-left: 2%;
+}
+
+.autor{
+    text-align: center;
+}
+.autor p{
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 200;
+}
+
+
+
     
     
     
