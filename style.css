@@ -1036,6 +1036,7 @@ html,body{
      top: 80%;
      left: 80%;
      position: fixed;
+     z-index: 99;
 }
 
 
